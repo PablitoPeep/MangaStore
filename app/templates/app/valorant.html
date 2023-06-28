@@ -1,0 +1,21 @@
+{% extends "app/base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+{% load static%}
+<br>
+<h1 id="titulo-valo" class="titulo-valo">Agentes Valorant</h1>
+<div class="container_valo">
+   <div class="container_valo" id="agent-container"></div>
+</div>
+<h1 class="titulo-valo">Armas</h1>
+<div class="container_valo">
+   <div class="container_valo">
+      <div class="container_valo" id="weapon-container"></div>
+   </div>
+</div>
+<h1 class="titulo-valo">Mapas de Valorant</h1>
+<div class="container_valo">
+   <div class="container_valo" id="map-container"></div>
+</div>
+<script src="{% static 'app/js/valorant.js' %}"></script>
+{% endblock %}

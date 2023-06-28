@@ -1,0 +1,92 @@
+{% extends "app/base.html" %}
+{% block title %}Catalogo{% endblock %}
+{% block content %}
+{% load static%}
+<link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+<div class="container">
+   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+   <div class="row">
+      <div class="col-sm-8">
+         <div class="container_rick" id="character-container">
+            <h1 class="titlerick">Personajes </h1>
+         </div>
+      </div>
+      <div class="col-sm-4">
+         <div id="card-rick" class="card-rick">
+            <img src="{% static 'app/img/rick_and_morty.webp' %}" id="logorick" alt="">
+            <hr>
+            <p><b>Información</b></p>
+            <hr>
+            <ul>
+               <li><b>Género:</b> Acción, Aventura, Ciencia Ficción, Comedia</li>
+               <li><b>Formato:</b> 16:9 HDTV</li>
+            </ul>
+            <hr>
+            <p><b>Creador(es)</b></p>
+            <ul>
+               <li>Justin Roiland</li>
+               <li>Dan Harmon</li>
+            </ul>
+            <hr>
+            <p><b>Reparto</b></p>
+            <ul>
+               <li>Justin Roiland</li>
+               <li>Dan Harmon</li>
+               <li>Chris Parnell</li>
+               <li>Spencer Grammer</li>
+               <li>Sarah Chalke</li>
+            </ul>
+            <hr>
+            <p><b>Compositor(es)</b></p>
+            <ul>
+               <li>Ryan Elder</li>
+            </ul>
+            <hr>
+            <p><b>País de Origen</b></p>
+            <ul>
+               <li>Estados Unidos</li>
+            </ul>
+            <hr>
+            <p><b>Temporadas</b></p>
+            <ul>
+               <li>5</li>
+            </ul>
+            <hr>
+            <p><b>Producción</b></p>
+            <ul>
+               <li><b>Productores:</b> J. Michael Mendel (Temporadas 1-4), Kenny Micka (Piloto)</li>
+               <li><b>Productores Ejecutivos:</b> Dan Harmon, Justin Roiland, James A. Fino (Temporadas 1-2), Joe Russo II
+                  (Temporadas 1-2), Mike McMahan (Temporada 4-Presente)
+               </li>
+               <li><b>Empresas Productoras:</b> Williams Street, Harmonious Claptrap, Starburns Industries (Temporadas 1–2),
+                  Justin Roiland's Solo Vanity Card Productions!, Rick and Morty, LLC. (Temporadas 2–3), Green Portal
+                  Productions (Temporada 4)
+               </li>
+            </ul>
+            <hr>
+            <p><b>Emisión</b></p>
+            <ul>
+               <li><b>Cadena Original:</b> Adult Swim</li>
+               <li><b>Clasificación:</b> TV-14</li>
+               <li><b>Primera Emisión:</b> 2 de diciembre de 2013 - Presente</li>
+            </ul>
+            <hr>
+            <p><b>Enlaces Externos</b></p>
+            <ul>
+               <li><a href="https://rickandmortyapi.com/" target="_blank">Sitio Web Oficial</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-8">
+         <div class="container_rick" id="episode-container">
+            <h1 class="titlerick">Episodios de Rick and Morty</h1>
+         </div>
+      </div>
+   </div>
+</div>
+<script src="{% static 'js/jquery-3.6.4.min.js' %}"></script>
+<script src="{% static 'js/darkmode.js' %}"></script>
+<script src="{% static 'app/js/rickandmorty.js' %}"></script>
+{% endblock %}

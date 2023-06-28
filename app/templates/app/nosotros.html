@@ -1,0 +1,70 @@
+{% extends "app/base.html" %}
+{% block title %}Catalogo{% endblock %}
+{% block content %}
+{% load static%}
+<!-- Contenido principal -->
+<div class="fondo ">
+   <div class="container mt-5">
+      <h1 class="manga-title">Nuestro Equipo</h1>
+      <div class="row mt-5">
+         <div class="col-lg-4 mb-4">
+            <div class="card_custom">
+               <img src="{% static 'app/img/grootmiembro.jpg' %}" class="card-img-top" alt="Imagen 1">
+               <div class="card-body-member">
+                  <h5 class="card-title-member">Leandro</h5>
+                  <p class="card-text-member">
+                     El CTM.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 mb-4">
+            <div class="card_custom">
+               <img src="{% static 'app/img/rocketmiembro.jpg' %}" class="card-img-top" alt="Imagen 2">
+               <div class="card-body-member">
+                  <h5 class="card-title-member">Sebastián</h5>
+                  <p class="card-text-member">
+                     El QL.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 mb-4">
+            <div class="card_custom">
+               <img src="{% static 'app/img/starlordmiembro.jpeg' %}" class="card-img-top" alt="Imagen 3">
+               <div class="card-body-member">
+                  <h5 class="card-title-member">Pablo</h5>
+                  <p class="card-text-member">
+                     El bastardo HDMP.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="container-sobre">
+            <h1 class="manga-title">Sobre Nosotros</h1>
+            <p>¡Bienvenido a nuestra tienda en línea de manga, el paraíso para los amantes del anime y el manga! En
+               nuestra
+               página, nos apasiona ofrecer una amplia selección de contenido manga para que puedas disfrutar de tus
+               series
+               favoritas y descubrir nuevas emocionantes aventuras.
+            </p>
+            <p>Encontrarás un extenso catálogo de mangas de diferentes géneros, desde shonen lleno de acción y batallas
+               épicas, hasta shojo romántico y cautivador, pasando por seinen maduro y seinen-ai con tramas complejas y
+               fascinantes. Trabajamos con los principales editores y distribuidores para asegurarnos de que siempre
+               tengas
+               acceso a las últimas novedades y los clásicos atemporales.
+            </p>
+            <p>Nuestro sitio web ofrece una experiencia de compra sencilla y segura. Puedes explorar nuestras secciones
+               cuidadosamente organizadas por género, autor o editor, lo que te permitirá encontrar fácilmente lo que
+               buscas.
+               También contamos con una función de búsqueda avanzada que te ayudará a localizar tu manga favorito en
+               segundos.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+<script src="{% static 'js/jquery-3.6.4.min.js' %}"></script>
+<script src="{% static 'js/darkmode.js' %}"></script>
+</div>
+{% endblock %}

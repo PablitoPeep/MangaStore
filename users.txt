@@ -1,0 +1,7 @@
+superUser 
+usuario : lalo          
+contraseña : lalo123
+
+usuario (ciudadano promedio)
+usuario:pablo    
+contraseña:picorico123

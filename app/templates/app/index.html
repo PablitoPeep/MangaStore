@@ -1,0 +1,64 @@
+{% extends "app/base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% block body %}
+<div class="manga-title">
+   <h3>"Libros de Arte Japones:" </h3>
+   <p>Sumérgete en el Mundo de los Mangas</p>
+</div>
+<div class="fondo1 ">
+   <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="{% static 'app/img/kime.webp' %}" class="d-block w-100" alt="Naruto">
+               <div class="carousel-caption">
+                  <h3>"Kimetsu no Yaiba: Demon Slayer"</h3>
+                  <p>¡Adéntrate en un viaje épico lleno de acción y emociones desbordantes con Tanjiro y sus amigos!</p>
+                  <a href="/app/templates/app/catalogo.html" class="btn btn-primary">Comprar</a>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="{% static 'app/img/one.jpg' %}" class="d-block w-100" alt="One Piece">
+               <div class="carousel-caption">
+                  <h3>"One Piece"</h3>
+                  <p>¡¡Zarpa hacia los mares embravecidos y descubre un tesoro de aventuras ilimitadas con luffy y sus
+                     amigos!!
+                  </p>
+                  <a href="/catalogo.html" class="btn btn-primary">Comprar</a>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="{% static 'app/img/fate.png' %}" class="d-block w-100" alt="fate">
+               <div class="carousel-caption">
+                  <h3>"Fate"</h3>
+                  <p>¡Con una combinación magistral de mitología, historia y fantasía, "Fate" te llevará a un viaje
+                     inolvidable lleno de giros sorprendentes y emociones desbordantes.!
+                  </p>
+                  <a href="/catalogo.html" class="btn btn-primary">Comprar</a>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </a>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+{% endblock %}
